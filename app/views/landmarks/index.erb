@@ -2,6 +2,8 @@
 
 <ul>
   <% @landmarks.each do |landmark| %>
-    <li> <%= landmark.name %> </li> 
+    <li>
+      <a "href=/landmarks/<%=landmark.id%>"<%= landmark.name %></a>
+    </li>
   <% end %>
 </ul>
