@@ -28,8 +28,8 @@ class FiguresController < ApplicationController
 
   #edit action
   get '/figures/:id/edit' do
-    @figure = Figures.find(params[:id])
-    erb :edit
+    @figure = Figure.find(params[:id])
+    erb :"figures/edit"
   end
 
   patch '/figures' do

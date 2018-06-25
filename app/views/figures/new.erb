@@ -10,7 +10,7 @@
   <h3> Choose an existing title: </h3>
 
   <%@titles.each do |title| %>
-    <p><input type="checkbox" id="title" name="figure[title_ids][]" value="<%=title.name%>"> <%=title.name%> </p>
+    <p><input type="checkbox" id="title_<%= title.id %>" name="figure[title_ids][]" value="<%=title.name%>"> <%=title.name%> </p>
   <%end%>
 
   <h3> Or, create a new title: </h3>
@@ -22,7 +22,7 @@
   <h3>Choose a landmark: </h3>
 
   <%@landmarks.each do |landmark| %>
-    <p><input type="checkbox" id="title" name="figure[landmark_ids][]" value="<%=landmark.name%>"> <%=landmark.name%> </p>
+    <p><input type="checkbox" id="landmark_<%= landmark.id %>" name="figure[landmark_ids][]" value="<%=landmark.name%>"> <%=landmark.name%> </p>
   <%end%>
 
   <h3> Or, create a new landmark: </h3>
