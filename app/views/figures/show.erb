@@ -3,6 +3,13 @@
 Titles:
   <ul>
   <%@figure.titles.each do |title| %>
-    <p> <li> test </li> </p>
+    <p> <li> <%= title.name %> </li> </p>
+    <% end %>
+  </ul>
+
+Landmarks:
+  <ul>
+  <%@figure.landmarks.each do |landmark| %>
+    <p> <li> <%= landmark.name %> </li> </p>
     <% end %>
   </ul>

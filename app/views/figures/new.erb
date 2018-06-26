@@ -6,7 +6,6 @@
   <label> Name: </label>
     <input type="text" id="figure_name" name="figure[name]">
 
-
   <h3> Choose an existing title: </h3>
 
   <%@titles.each do |title| %>
@@ -29,6 +28,10 @@
 
   <label> Name: </label>
     <input type="text" id="new_landmark" name="landmark[name]">
+  <br></br>
+
+  <label> Year Completed: </label>
+    <input type="text" id="new_landmark_year" name="landmark[year_completed]">
   <br></br>
 
   <input type="submit" value="Create New Figure">
